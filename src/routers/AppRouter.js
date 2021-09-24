@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,6 +7,7 @@ import {
 import { CharactersScreen } from '../components/characters/CharactersScreen'
 import { EpisodesScreen } from '../components/episodes/EpisodesScreen'
 import { HomePage } from '../components/homepage/HomePage'
+import { Footer } from '../components/ui/Footer'
 import { Navbar } from '../components/ui/Navbar'
 import { NotFound } from '../components/ui/NotFound'
 
@@ -23,6 +24,8 @@ export const AppRouter = () => {
                     <Route component={NotFound} />
                 </Switch>
             </div>
+
+            <Footer />
         </Router>
     )   
 }
