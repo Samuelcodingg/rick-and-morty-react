@@ -1,9 +1,8 @@
 import React from 'react'
+import { InputSearcher } from '../ui/InputSearcher'
 
 export const CharactersScreen = () => {
     return (
-        <div>
-            <h1>CharactersScreen</h1>
-        </div>
+        <InputSearcher url={window.location.href} />
     )
 }
