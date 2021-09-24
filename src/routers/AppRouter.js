@@ -7,17 +7,15 @@ import {
 import { CharactersScreen } from '../components/characters/CharactersScreen'
 import { EpisodesScreen } from '../components/episodes/EpisodesScreen'
 import { HomePage } from '../components/homepage/HomePage'
+import { Navbar } from '../components/ui/Navbar'
 import { NotFound } from '../components/ui/NotFound'
 
 export const AppRouter = () => {
     return (
         <Router>
+            <Navbar />
 
-            <nav className="bg-dark text-white p-5">
-                <h1>Example</h1>
-            </nav>
-
-            <div>
+            <div className="container">
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/characters" component={CharactersScreen} />
