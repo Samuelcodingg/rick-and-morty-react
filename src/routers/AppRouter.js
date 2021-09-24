@@ -7,6 +7,7 @@ import {
 import { CharactersScreen } from '../components/characters/CharactersScreen'
 import { EpisodesScreen } from '../components/episodes/EpisodesScreen'
 import { HomePage } from '../components/homepage/HomePage'
+import { NotFound } from '../components/ui/NotFound'
 
 export const AppRouter = () => {
     return (
@@ -21,6 +22,7 @@ export const AppRouter = () => {
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/characters" component={CharactersScreen} />
                     <Route exact path="/episodes" component={EpisodesScreen}/>
+                    <Route component={NotFound} />
                 </Switch>
             </div>
         </Router>
