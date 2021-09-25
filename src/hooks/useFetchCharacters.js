@@ -17,6 +17,12 @@ export const useFecthCharacters = () => {
                     data: chars
                 })
             })
+            .catch((error) => {
+                setState({
+                    data: []
+                })
+                console.log(error);
+            })
     }, [characters]);
 
     return state;

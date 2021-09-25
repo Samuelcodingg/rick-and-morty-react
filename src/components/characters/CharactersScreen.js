@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../../AppContext';
 import { useFecthCharacters } from '../../hooks/useFetchCharacters';
+import './index.css';
 
 export const CharactersScreen = () => {
 
@@ -28,10 +29,13 @@ export const CharactersScreen = () => {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row mb-5 container-items">
                 {
                     data.map((item) => 
-                        <img key={item.id} src={item.urlImage} alt={item.name} />
+                        <div className="col-6 col-md-3 text-center my-4 animate__animated animate__fadeIn" key={item.id}>
+                            <h4>{item.name}</h4>
+                            <img src={item.urlImage} alt={item.name} className="character-img" />
+                        </div>
                     )
                 }
             </div>
