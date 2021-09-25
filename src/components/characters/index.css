@@ -1,7 +1,21 @@
-.character-img {
-    height: 150px;
-}
-
 .container-items {
     min-height: 50vh;
+}
+
+.character-img {
+    height: 200px;
+    transition: all 300ms;
+}
+
+.animate__animated:hover .character-img {
+    filter: brightness(40%);
+}
+
+.animate__animated:hover .button-char {
+    opacity: 1;
+}
+
+.button-char {
+    top: -50px;
+    opacity: 0;
 }
