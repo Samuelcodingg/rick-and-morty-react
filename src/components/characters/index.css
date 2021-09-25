@@ -7,6 +7,10 @@
     transition: all 300ms;
 }
 
+.character-img-info {
+    height: 230px;
+}
+
 .animate__animated:hover .character-img {
     filter: brightness(40%);
 }
@@ -18,4 +22,8 @@
 .button-char {
     top: -50px;
     opacity: 0;
+}
+
+.div-character {
+    min-height: 60vh;
 }
