@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AppRouter } from './routers/AppRouter'
 import './App.css'
+import { AppContext } from './AppContext';
 
 export const App = () => {
+    
+    const [characters, setCharacters] = useState(['']);
+
     return (
-        <div>
+        <AppContext.Provider value={{
+            characters,
+            setCharacters
+        }}>
             <AppRouter />
-        </div>
+        </AppContext.Provider>
     )
 }

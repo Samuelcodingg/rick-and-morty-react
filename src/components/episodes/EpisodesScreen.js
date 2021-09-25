@@ -1,8 +1,13 @@
-import React from 'react'
-import { InputSearcher } from '../ui/InputSearcher'
+import React from 'react';
 
 export const EpisodesScreen = () => {
     return (
-        <InputSearcher url={window.location.href} />
+        <div className="py-5">
+            <input
+                type="text"
+                className="form-control"
+                placeholder="type an episode..."
+            />
+        </div>
     )
 }
