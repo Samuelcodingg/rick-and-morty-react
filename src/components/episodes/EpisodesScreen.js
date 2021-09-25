@@ -32,7 +32,7 @@ export const EpisodesScreen = () => {
                         <div className="col-6 col-md-3 text-center my-4 animate__animated animate__fadeIn  border border-shadow rounded py-5" key={item.id}>
                             <h4>{item.name}</h4>
                             <h5>Chapter: {item.number}</h5>
-                            <Link to={`/character/${item.id}`} role="button" className="btn btn-dark">
+                            <Link to={`/episode/${item.id}`} role="button" className="btn btn-dark">
                                 See more
                             </Link>
                         </div>
