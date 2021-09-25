@@ -6,11 +6,14 @@ import { AppContext } from './AppContext';
 export const App = () => {
     
     const [characters, setCharacters] = useState(['']);
+    const [episodes, setEpisodes] = useState(['']);
 
     return (
         <AppContext.Provider value={{
             characters,
-            setCharacters
+            setCharacters,
+            episodes,
+            setEpisodes
         }}>
             <AppRouter />
         </AppContext.Provider>
